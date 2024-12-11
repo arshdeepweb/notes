@@ -221,7 +221,7 @@ WITH my_cte AS (SELECT CustID, Salary FROM customer)
 ```
 SELECT * FROM my_cte;
 ```
-## 10. Best Practices and Next Steps
+## 10. Best Practices and Next Steps()
 Practice SQL Joins, Window Functions, and CTEs for advanced database manipulation.
 
 Review SQL Interview Questions for practical applications.
