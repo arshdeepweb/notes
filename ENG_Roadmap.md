@@ -1,191 +1,229 @@
-# Full Stack Web Development & System Architecture Roadmap
+# Full Stack Road Map for 2025
 
-This roadmap provides a detailed path to becoming proficient in Full Stack Web Development, including backend systems, advanced architecture, cloud technologies, and more.
+🚀 **Join Live Full Stack Web Dev Cohort 1.0**
 
-## Table of Contents
+## Fundamentals - 1.5 Months
 
-1. [Fundamentals (1.5 Months)](#fundamentals-15-months)
-2. [Web Development (Basic) (3 Months)](#web-development-basic-3-months)
-3. [Break Time (15 Days)](#break-time-15-days)
-4. [Basic Backend Development (3 Months)](#basic-backend-development-3-months)
-5. [React JS (2 Months)](#react-js-2-months)
-6. [Full Stack Applications (MERN or PERN)](#full-stack-applications-mern-or-pern)
-7. [Cloud Technologies](#cloud-technologies)
-8. [Advanced Topics (Unstoppable Journey)](#advanced-topics-unstoppable-journey)
+### C & C++
+- **Number Systems**
+  - Binary, Octal, Hexadecimal
+  - Binary Operations & Bits
+  - Logical Gates (AND, OR, NOT, XOR)
+  - Data Structures (Only Basic Ones)
+    - Arrays
+    - LinkedLists
+    - Stacks
+    - Queues
+    - HashMaps
 
----
+### Build Following Projects (CLI Based)
+- Number Guessing Game
+- Telephone Directory with File Handling
+- Bank Account Simulation - OOPS
+- File Encryption
 
-## 1. Fundamentals (1.5 Months)
+## Web Development [Basic] (3 Months)
 
-### 1.1 Programming Foundations
-- Learn **C & C++** for low-level programming.
-- Study **memory management**, **data types**, and basic syntax.
+### HTML & CSS
+- Build at least 100 beautiful static landing pages.
 
-### 1.2 Number Systems
-- Understand **binary**, **octal**, and **hexadecimal**.
-- Learn **binary operations**, **bits**, and **logical gates**.
+### Master Git and Github
 
-### 1.3 Basic Data Structures
-- **Arrays**: Index-based storage.
-- **Linked Lists**: Dynamic memory allocation.
-- **Stacks**: LIFO principle.
-- **Queues**: FIFO principle.
-- **HashMaps**: Key-value pairs.
+### Basic Javascript
+- Variables
+- Functions
+- Control Flow
+- Data Structures
+- Objects & etc...
+- DOM APIs
+- Event handling and DOM Manipulation
+- Browser Features
 
-### 1.4 Projects
-- **Number Guessing Game**
-- **Telephone Directory** (File Handling)
-- **Bank Account Simulation** (OOPS)
-- **File Encryption**
+### Build Following Projects
+- Digital Clock
+- Stopwatch and Timer App
+- Todo App with Local Storage
+- Weather Forecast based on current user's location
+- Monkey Typing Game
+- Image Slider
 
----
+### Break Time 15 Days
+- What is the Internet and How it works?
+- What are Protocols and why it is needed?
+- TCP vs UDP Protocol
+- What is DNS and how DNS works?
+- DNS Records - A, AAA, CNAME, TXT, NS, MX
+- Client Server Architecture
+- 3 Way TCP Handshakes
+- UDP & WebRTC
+- IP Addresses (Private vs Public)
+- Subnet Masks and basics of Networking
 
-## 2. Web Development (Basic) (3 Months)
+## Basic Backend Development (3 Months)
 
-### 2.1 HTML & CSS
-- Build **100+ static landing pages** for practice.
-- Learn about **Flexbox**, **Grid systems**, and **media queries**.
+### What is a Server?
+- Difference between WebServer, API Server, File Server.
+- Cloud Server vs On-Prem. Servers and Virtualization.
 
-### 2.2 Git & GitHub
-- Master **version control** with Git.
-- Learn to work with **GitHub** for code collaboration.
+### Introduction to NodeJS
+- Building REST APIs in Node
+- Express, Hono, or Intent JS Frameworks
+- Testing of APIs with POSTMAN-like tools
+- Headers, Body, and HTTP Methods
 
-### 2.3 JavaScript Basics
-- Learn **variables**, **functions**, and **control flow**.
-- Master **DOM manipulation** and **event handling**.
+### DB Integration (Start with MongoDB and Mongoose)
+- What is an ORM
+- SQL vs No-SQL DBs
+- Postgres DB and Learn SQL
+- Prisma, Drizzle, Knex as ORM for SQL
+- Authentication and Authorization
+  - JWT vs Sessions
 
-### 2.4 Projects
-- **Digital Clock**
-- **Stopwatch and Timer App**
-- **Todo App** with Local Storage
-- **Weather Forecast App**
-- **Monkey Typing Game**
-- **Image Slider**
+### Build Projects
+- Simple CRUD Applications
+- E-Commerce API
+- Task Management API
+- Weather API Wrapper
 
----
+### More Concepts
+- Redis
+- Queue System (BullMQ or SQS)
+- Rate Limiting and Rate Limiting Strategies
+- Async and Batch Processing Jobs
+- DB Indexes and DB Optimizations
 
-## 3. Break Time (15 Days)
+### Binge watch Case Studies and Blogs of large companies
 
-Learn about:
-- **How the Internet Works**
-- **Protocols** (TCP vs UDP, DNS, IP addresses)
-- **Networking Concepts** (subnetting, DNS, 3-way handshake)
+### Soft Skills
+- Be active on Twitter-like community and tell about yourself
+- Tell what you are learning and what you are building
+- Ask for more advanced topics and suggestions for what I can build next
+- Watch out for problems and try solving and creating solutions
+- Feel more confident in what you are doing and learning
+- Connect with Right People
 
----
+## React JS (2 Months)
 
-## 4. Basic Backend Development (3 Months)
+### Why do we need React?
+- React Fundamentals
+- Hooks
+- Components
+- Life Cycle
+- Styling
+- Tailwind CSS
+- State Management
+- Redux and Zustand
+- Routing in React Router DOM
 
-### 4.1 Understanding Servers
-- **WebServer** vs **API Server** vs **File Server**.
-- **Cloud Servers** vs **On-Prem Servers**.
+### Building Projects
+- Todo Application with Local Storage
+- Weather Applications
+- Amazon-like Working Clones (FE Only)
+- YouTube working clone using Google APIs
+- Full Stack Application (MERN or PERN)
+- Real Time Collaboration Google Doc
+- Multi-Vendor E-Commerce Platform
+- Social Media (X, LinkedIn) Automation Tool
+- Video Conferencing Applications (WebRTC or SFU)
+- Live Streaming Studio (RTMP)
+- Collaborative whiteboarding tools with ACL and more advanced features
+- Zapier Like Automation Apps
 
-### 4.2 Node.js & REST APIs
-- Learn **Node.js** basics.
-- Design **RESTful APIs** with **Express**.
-- Understand **POSTMAN** for API testing.
+## Cloud
 
-### 4.3 SQL Databases & MongoDB
-- Learn **PostgreSQL** and basic SQL.
-- Integrate **MongoDB** with **Mongoose** for NoSQL storage.
-- Understand **authentication** (JWT, sessions).
+- **AWS**
+  - EC2
+  - Load Balancers
+  - SG, TG
+  - Cloud Front
+  - VPC and Network Gateways and Internet Gateways
+  - SES, SQS, S3
+  - CloudFormation Templates and Scripts
+  - Private and Public VPC
+  - Subnets
+  - IAM Roles, Federated Identities
+  - API Gateways
 
-### 4.4 Projects
-- **CRUD Application**
-- **E-commerce API**
-- **Task Management API**
-- **Weather API Wrapper**
+## Become Unstoppable
 
----
+### 1. Distributed Systems
+- Microservices Architecture: Breaking applications into smaller, independently deployable services.
+- Service discovery and load balancing.
+- Communication strategies (REST, gRPC, Message Queues).
+- Saga patterns for distributed transactions.
+- CAP Theorem: Trade-offs between Consistency, Availability, and Partition Tolerance in distributed systems.
+- Eventual Consistency: Achieving data consistency over time in distributed databases (e.g., DynamoDB).
+- Sharding and Replication: Techniques to horizontally scale databases.
+- Consensus Algorithms: Ensuring distributed nodes agree on a single source of truth (e.g., Raft, Paxos).
 
-## 5. React JS (2 Months)
+### 2. API Design and Optimization
+- RESTful API Best Practices: Designing versioned, scalable, and secure APIs.
+- GraphQL: Crafting flexible and efficient query systems.
+- gRPC: High-performance, low-latency communication for inter-service communication.
+- API Rate Limiting: Strategies to control traffic using tools like Redis or third-party services.
+- HATEOAS: Hypermedia as the Engine of Application State for discoverable APIs.
 
-### 5.1 React Fundamentals
-- Learn about **Components**, **Hooks**, and **State Management**.
-- Understand **React Router DOM** for routing.
+### 3. Caching Strategies
+- Cache Invalidation: Techniques for keeping cache and data in sync (write-through, write-behind, cache-aside).
+- CDN Integration: Leveraging edge caching for static and dynamic content.
+- Distributed Caches: Using tools like Redis or Memcached in multi-node environments.
+- Cache Partitioning: Avoiding bottlenecks with consistent hashing.
 
-### 5.2 Styling in React
-- Use **Tailwind CSS** for styling.
+### 4. Asynchronous Processing
+- Task Queues: Using RabbitMQ, Kafka, or BullMQ for background job processing.
+- Worker Pools: Managing and scaling background workers efficiently.
+- Batch Processing: Designing systems for processing large datasets in chunks.
+- Event-Driven Architectures: Leveraging events for loose coupling and scalability (e.g., Kafka, AWS SNS/SQS).
 
-### 5.3 State Management
-- Master **Redux** and **Zustand** for managing application state.
+### 5. Database Optimization and Management
+- Indexing: Choosing the right type of index (B-Tree, Hash, Full-text).
+- Database Partitioning: Vertical vs. horizontal partitioning for scaling.
+- Query Optimization: Analyzing query plans and reducing query time.
+- Data Modeling: Designing schemas for relational and NoSQL databases.
+- Distributed Databases: Understanding database models like Spanner, CockroachDB, or Cassandra.
+- ACID vs. BASE: Trade-offs between consistency and availability in database systems.
 
-### 5.4 Projects
-- **Todo Application** with Local Storage.
-- **Weather Application**.
-- **Amazon Clone** (Frontend only).
-- **YouTube Clone** using Google APIs.
+### 6. Authentication and Authorization
+- OAuth 2.0 and OpenID Connect: Secure token-based authentication for APIs.
+- JWT (JSON Web Tokens): Stateless authentication mechanisms.
+- Session Management: Balancing session persistence and security.
+- Role-Based Access Control (RBAC): Implementing granular permission management.
+- SSO (Single Sign-On): Integrating with external identity providers.
 
----
+### 7. Observability and Monitoring
+- Logging: Structured logging with tools like ELK Stack, Graylog.
+- Metrics Collection: Using Prometheus, Grafana for performance monitoring.
+- Tracing: Distributed tracing with tools like Jaeger or Zipkin.
+- Alerting: Setting up alerts based on predefined thresholds.
+- Chaos Engineering: Simulating failures to test system resilience (e.g., Netflix’s Chaos Monkey).
 
-## 6. Full Stack Applications (MERN or PERN)
+### 8. Fault Tolerance and Resilience
+- Circuit Breakers: Prevent cascading failures in microservices (e.g., Resilience4j).
+- Retries and Exponential Backoff: Handling transient failures effectively.
+- Graceful Degradation: Designing systems to offer reduced functionality during failures.
+- Dead Letter Queues: Managing failed messages in message queues.
 
-### 6.1 Real-Time Collaboration
-- Build a **Google Docs-like** application.
+### 9. Security
+- Data Encryption: Encrypting data at rest and in transit.
+- Rate Limiting and Throttling: Preventing abuse and DoS attacks.
+- CSRF and CORS: Protecting APIs against cross-site vulnerabilities.
+- SQL Injection and XSS Prevention: Secure input validation and sanitization.
+- Secrets Management: Using tools like HashiCorp Vault or AWS Secrets Manager.
 
-### 6.2 Multi-Vendor E-Commerce Platform
-- Design an **e-commerce platform** for multiple vendors.
+### 10. Advanced Networking Concepts
+- Load Balancing: Using reverse proxies like NGINX, HAProxy, or AWS ALB.
+- Reverse Proxy: Optimizing performance and securing backend services.
+- WebSockets: Real-time bidirectional communication.
+- TCP vs. UDP: Choosing protocols based on use cases (e.g., WebRTC).
+- Zero Downtime Deployments: Techniques like blue-green deployment or canary releases.
 
-### 6.3 Social Media Automation Tool
-- Create a **LinkedIn** or **Twitter** automation tool.
+### 11. Advanced Architectures
+- Service Mesh: Managing microservices traffic with tools like Istio or Linkerd.
+- Serverless Architectures: Using AWS Lambda, Google Cloud Functions for scaling on demand.
+- Edge Computing: Moving computation closer to the user for latency-sensitive applications.
+- Hybrid Cloud: Designing systems that work across on-premises and cloud environments.
 
-### 6.4 Advanced Applications
-- **Video Conferencing** (WebRTC or SFU).
-- **Live Streaming Studio** (RTMP).
-- **Zapier-like Automation Apps**.
-
----
-
-## 7. Cloud Technologies
-
-### 7.1 AWS Core Services
-- Learn **EC2**, **S3**, **CloudFront**, **VPC**, **IAM**, **API Gateway**.
-
-### 7.2 Advanced Cloud Concepts
-- Understand **Load Balancing**, **Auto-scaling**, and **CloudFormation**.
-
----
-
-## 8. Advanced Topics (Unstoppable Journey)
-
-### 8.1 Distributed Systems
-- **Microservices Architecture**.
-- Learn **CAP Theorem** and **Sharding**.
-- Understand **Service Discovery**, **Eventual Consistency**.
-
-### 8.2 API Design & Optimization
-- **GraphQL**, **gRPC**, and **RESTful APIs** best practices.
-
-### 8.3 Caching Strategies
-- Learn **Cache Invalidation**, **CDN**, and **Distributed Caches** like **Redis**.
-
-### 8.4 Asynchronous Processing
-- Use **Task Queues** (RabbitMQ, Kafka) for background jobs.
-
-### 8.5 Database Management
-- **Indexing**, **Query Optimization**, and **Distributed Databases**.
-
-### 8.6 Security
-- **OAuth 2.0**, **JWT**, and **Role-Based Access Control (RBAC)**.
-
-### 8.7 Fault Tolerance & Resilience
-- Implement **Circuit Breakers**, **Retries**, and **Graceful Degradation**.
-
-### 8.8 Advanced Networking
-- Study **Load Balancing**, **WebSockets**, **Reverse Proxies**.
-
-### 8.9 Service Mesh & Serverless
-- Implement **Service Mesh** (e.g., Istio) and **Serverless Architectures**.
-
-### 8.10 Data Pipelines & ETL
-- Use **Kafka**, **Airflow**, and **BigQuery** for data processing.
-
----
-
-## Conclusion
-
-This roadmap is designed to help you become proficient in full-stack web development and master advanced system architecture concepts. Work on building projects throughout each phase and constantly challenge yourself with new learning.
-
-Stay persistent, keep building, and you'll become unstoppable in your learning journey!
-
-
-[READ FULL ROADMAP IN DEPTH](#https://app.eraser.io/workspace/O5dN6UVcuyuQFltgunUi)
+### 12. Data Pipelines and ETL
+- Stream Processing: Real-time data processing with Apache Kafka or Apache Flink.
+- Batch Processing: Large-scale ETL jobs with Apache Airflow or AWS Glue.
+- Data Warehousing: Building scalable analytics pipelines with Snowflake or BigQuery.
