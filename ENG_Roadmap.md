@@ -589,3 +589,12 @@
 - Model trainings and platforms
 - Fun with Text and images
 - Building Apps with AI - Project Work
+
+## Full Stack Application PROJECTS (MERN or PERN)
+- Real Time Collaboration Google Doc
+- Multi-Vendor E-Commerce Platform
+- Social Media (X, LinkedIn) Automation Tool
+- Video Conferencing Applications (WebRTC or SFU)
+- Live Streaming Studio (RTMP)
+- Collaborative white boarding tools with ACL and more advance features
+- Zapier Like Automation Apps
