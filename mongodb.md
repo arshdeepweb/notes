@@ -168,9 +168,11 @@ db.createUser({
 ```bash
 # Backup
 mongodump --db database_name --out /backup/path
+mongodump --uri="mongodb://localhost:27017" --db=name --out=Image
 
 # Restore
 mongorestore --db database_name /backup/path/database_name
+mongorestore --db=inventory "E:/path/inventory"
 ```
 
 ## 11. MongoDB with Node.js
