@@ -1,140 +1,141 @@
-# Docker CLI Cheat Sheet
+# Docker Full Course
 
-## Build and Manage Docker Images
+## Table of Contents
+1. [Introduction to Docker](#introduction-to-docker)
+2. [Docker Commands](#docker-commands)
+3. [Building Custom Images](#building-custom-images)
+4. [Docker Compose](#docker-compose)
+5. [Multi-Stage Build](#multi-stage-build)
 
-- **Build an Image from a Dockerfile:**
-  ```bash
-  docker build -t <image_name> .
-  ```
+---
 
-- **Build an Image from a Dockerfile without the cache:**
-  ```bash
-  docker build -t <image_name> . --no-cache
-  ```
+## Introduction to Docker
+Docker is a containerization tool that allows developers to package applications and their dependencies into portable containers.
 
-- **List local images:**
-  ```bash
-  docker images
-  ```
+### Install Docker
+```sh
+# Install Docker on Ubuntu
+sudo apt update
+sudo apt install docker.io -y
 
-- **Delete an Image:**
-  ```bash
-  docker rmi <image_name>
-  ```
+# Verify installation
+docker --version
+```
 
-- **Remove all unused images:**
-  ```bash
-  docker image prune
-  ```
+---
 
-## Docker Hub Operations
+## Docker Commands
 
-- **Login into Docker:**
-  ```bash
-  docker login -u <username>
-  ```
+### Basic Commands
+```sh
+# Check Docker version
+docker --version
 
-- **Publish an image to Docker Hub:**
-  ```bash
-  docker push <username>/<image_name>
-  ```
+# List running containers
+docker ps
 
-- **Search Hub for an image:**
-  ```bash
-  docker search <image_name>
-  ```
+# List all containers (including stopped ones)
+docker ps -a
 
-- **Pull an image from Docker Hub:**
-  ```bash
-  docker pull <image_name>
-  ```
+# Start a container
+docker start <container_id>
 
-## Create and Manage Containers
+# Stop a container
+docker stop <container_id>
 
-- **Create and run a container from an image with a custom name:**
-  ```bash
-  docker run --name <container_name> <image_name>
-  ```
+# Remove a container
+docker rm <container_id>
 
-- **Run a container and publish its port(s) to the host:**
-  ```bash
-  docker run -p <host_port>:<container_port> <image_name>
-  ```
+# Remove an image
+docker rmi <image_id>
+```
 
-- **Run a container in the background:**
-  ```bash
-  docker run -d <image_name>
-  ```
+### Build and Run a Container
+```sh
+# Build a Docker image
+docker build -t myapp .
 
-- **Start or stop an existing container:**
-  ```bash
-  docker start|stop <container_name>
-  ```
+# Run a container from an image
+docker run -d -p 8080:80 myapp
+```
 
-- **Remove a stopped container:**
-  ```bash
-  docker rm <container_name>
-  ```
+---
 
-- **Open a shell inside a running container:**
-  ```bash
-  docker exec -it <container_name> sh
-  ```
+## Building Custom Images
 
-## Monitoring and Debugging
+### Dockerfile Example
+Create a `Dockerfile`:
+```dockerfile
+# Use official Node.js image as base
+FROM node:18
 
-- **Fetch and follow the logs of a container:**
-  ```bash
-  docker logs -f <container_name>
-  ```
+# Set working directory
+WORKDIR /app
 
-- **Inspect a running container:**
-  ```bash
-  docker inspect <container_name>
-  ```
+# Copy package.json and install dependencies
+COPY package.json .
+RUN npm install
 
-- **List currently running containers:**
-  ```bash
-  docker ps
-  ```
+# Copy application source code
+COPY . .
 
-- **List all Docker containers (running and stopped):**
-  ```bash
-  docker ps --all
-  ```
+# Expose port
+EXPOSE 3000
 
-- **View resource usage stats:**
-  ```bash
-  docker container stats
-  ```
+# Command to run the app
+CMD ["node", "server.js"]
+```
 
-## General Commands
+Build and run:
+```sh
+docker build -t mynodeapp .
+docker run -d -p 3000:3000 mynodeapp
+```
 
-- **Start the Docker daemon:**
-  ```bash
-  docker -d
-  ```
+---
 
-- **Get help with Docker (works with all subcommands):**
-  ```bash
-  docker --help
-  ```
+## Docker Compose
 
-- **Display system-wide information:**
-  ```bash
-  docker info
-  ```
+Create a `docker-compose.yml` file:
+```yaml
+version: '3.8'
 
-## Additional Resources
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+```
 
-- **Docker Desktop Installation:**
-  Docker Desktop is available for Mac, Linux, and Windows. Learn more at: [Docker Desktop](https://docs.docker.com/desktop)
+Run with:
+```sh
+docker-compose up -d
+```
 
-- **Example Projects Using Docker:**
-  Explore examples at: [Awesome Compose](https://github.com/docker/awesome-compose)
+---
 
-- **Official Docker Documentation:**
-  Visit: [Docker Documentation](https://docs.docker.com)
+## Multi-Stage Build
 
-- **Docker Hub:**
-  Find and share container images: [Docker Hub](https://hub.docker.com)
+### Multi-Stage Dockerfile Example
+```dockerfile
+# Stage 1: Build the application
+FROM node:18 as builder
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve the application
+FROM nginx:latest
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+Build and run:
+```sh
+docker build -t myapp-multistage .
+docker run -d -p 80:80 myapp-multistage
